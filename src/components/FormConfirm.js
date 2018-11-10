@@ -45,7 +45,7 @@ export class FormConfirm extends Component {
             </ListItem>
           </List>
           <Button variant="contained" style={styles.input} onClick={this.back}>
-            Confirm and Continue
+            Back
           </Button>
           <Button
             variant="contained"
@@ -53,7 +53,7 @@ export class FormConfirm extends Component {
             style={{ ...styles.input, ...styles.back }}
             onClick={this.continue}
           >
-            Continue
+            Confirm and Continue
           </Button>
         </>
       </MuiThemeProvider>
@@ -65,6 +65,12 @@ const styles = {
   list: {
     width: 300,
     margin: "0 auto" 
+  },
+  input: {
+    marginTop: 15
+  },
+  back: {
+    marginLeft: 10
   }
 };
 
